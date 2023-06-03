@@ -1,0 +1,38 @@
+[
+    {
+      "name": "node-api",
+      "image": "rcanelav/hunky-back:v1",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+            "name": "DATABASE_HOST",
+            "value": "bcu8tjtaure2gu5pt2pa-mysql.services.clever-cloud.com"
+        },
+        {   
+            "name": "DATABASE_PORT",
+            "value": "3306"
+        },
+        {
+            "name": "DATABASE_NAME",
+            "value": "bcu8tjtaure2gu5pt2pa"
+        },
+        {
+            "name": "DATABASE_USER",
+            "value": "uj8kpnncofhcj2gq"
+        },
+        {
+            "name": "DATABASE_PASSWORD",
+            "value": "jg5Dx1oYhSECErsAHJnB"
+        }
+      ],
+        
+        "memory": 128
+    }
+  ]
+  
