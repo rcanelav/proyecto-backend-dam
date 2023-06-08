@@ -10,6 +10,7 @@ if [ ! -f ".env.production" ]; then
     echo "Generating the .env file..."
     cat <<EOF >> .env.production
 PORT=3000
+DEPLOY_URL=http://localhost:3005/#
 #
 ## JWT
 #
