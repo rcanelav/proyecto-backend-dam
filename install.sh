@@ -4,12 +4,12 @@
 npm install --legacy-peer-deps
 
 # Create .env file if it doesn't exist
-if [ ! -f ".env" ]; then
-    touch .env
+if [ ! -f ".env.production" ]; then
+    touch .env.production
     # Append the env schema
     echo "Generating the .env file..."
-    cat <<EOF >> .env
-PORT=3005
+    cat <<EOF >> .env.production
+PORT=3000
 #
 ## JWT
 #
