@@ -1,0 +1,2 @@
+# start app
+npm start
